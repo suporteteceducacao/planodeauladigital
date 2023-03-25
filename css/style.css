@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Roboto:wght@300;400&display=swap");
+
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;    
+      font-family: "Roboto", sans-serif;
+  }
+
+body{
+   background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(224,235,249,1) 100%);
+}
+  .container{
+      width: 100%;
+      display: flex;
+    flex-direction: column;
+      justify-content: center;
+      align-items: center;
+     background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(224,235,249,1) 100%);
+  
+  }
+.titulo{
+  padding: 13px;
+  margin: 6px;
+  text-align: center;
+}
+.titulo:after{
+ content: '';
+  display: block;
+  width: 680px;
+  height: 3px;
+  background: #d33a;
+  margin: 0 auto;
+  margin: 17px;
+}
+
+  .box{
+    width: 1100px;
+    margin: 0 auto;
+    padding: 3px;
+    margin: 13px;
+   background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(224,235,249,1) 100%);
+    border-radius: 6px;
+  }
+
+  .btn{
+    padding: 6px 13px;
+    background-color: #d33;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+  }
+
+  .btn:hover{
+    background-color: #d33a
+  }
+
+a{
+  text-decoration: none;
+}
+
+.video{
+  height: 350px;
+ display: flex;
+ justify-content: space-around;
+ align-items:center;
+ padding: 5px;
+ margin: 13px;
+}
+iframe{
+  margin: 23px;
+}
+
+  details{
+  background-color: #c3c3c3;
+  border: 1px solid #c3c3c3;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  padding: 15px;
+  line-height: 1.5;
+  font-size:1.3rem;
+    
+  }
+
+summary{
+  font-size: 1.3rem;
+  height: 35px;
+  padding: 5px;
+}
+
+span{
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 5px;
+}
+.rodape{
+
+  height: 150px;
+  font-size: 17px;
+  text-align: center;
+  margin: 30px;
+  padding: 23px;
+  background: rgb(234,238,238);
+background: linear-gradient(0deg, rgba(234,238,238,1) 0%, rgba(0,205,238,1) 95%);
+  clip-path: polygon(0 0, 100% 0, 99% 95%, 0 55%);
+  
+}
+
+mark{
+border-radius:  8px;
+padding:  2px 4px;
+background: #74ebd5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ }
+
+
+@media(max-width:768px){
+
+  .video, .container{
+    flex-direction: column;
+  }
+    
+  .box{
+    width:100%;
+  }
+   
+  .titulo{
+    font-size: 10px;
+    
+  }
+  
+  .video, iframe{
+    width: 95%;
+     
+  }
+
+  .rodape{
+
+  height: 200px;
+}
+
+  span, details{
+    font-size: 1rem;
+  }
+
+summary{
+  font-size: 0.9rem;
+}
+
+}
